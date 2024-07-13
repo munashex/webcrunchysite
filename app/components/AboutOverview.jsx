@@ -4,9 +4,8 @@ import overview from '../images/miniOverview.png'
 
 const AboutOverview = () => {
 
-
     return (
-        <div className="grid grid-cols-1  lg:grid-cols-2  mt-16 gap-y-16 gap-x-24">
+        <div className="grid grid-cols-1  lg:grid-cols-2  mt-24 gap-y-16 gap-x-24">
 
         <div className="space-y-3">
         <h1 className="text-2xl font-bold">A top-tier company in South Africa specializing in website design and development.</h1>

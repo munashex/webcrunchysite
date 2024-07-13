@@ -5,6 +5,8 @@ import { featuredProducts } from "./data/featuredProducts";
 import Link from 'next/link';
 import Image from 'next/image';
 import AboutOverview from "./components/AboutOverview";
+import Review from "./components/Review";
+
 
 const Home = () => {
   const videoUrl = "https://res.cloudinary.com/ditls34gp/video/upload/v1720525805/vhptrt7mjlyxhdah2dia.mp4";
@@ -82,7 +84,9 @@ const Home = () => {
               <span><FaArrowRight size="21" /></span>
             </button>
           </div>
+          
           <AboutOverview/>
+          <Review/>
         </div>
       </div>
     </div>
