@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from './components/Footer'
 
 
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className="font-sans w-[100%]">
         <Navbar/>
         {children}
+        <Footer/>
         </body>
     </html>
   );

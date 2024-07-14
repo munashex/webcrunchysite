@@ -22,10 +22,10 @@ const Review = () => {
   return (
     <div className="mt-24 mx-0.5 lg:mx-14">
       <span><ImQuotesLeft size={45}/></span>
-      <div className="border-b-2 border-slate-500 py-16 rounded"> 
+      <div> 
         <Slider {...settings}>
           {clientsReview.map((review) => (
-            <div key={review.name} className="space-y-4">
+            <div key={review.name} className="space-y-4 pt-6">
               <h1 className="text-lg md:text-xl lg:text-2xl">{review.description}</h1> 
               <div className="space-y-2">
                 <h1 className="font-bold md:text-xl">{review.name}</h1> 
