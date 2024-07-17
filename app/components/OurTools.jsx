@@ -10,7 +10,7 @@ const OurTools = () => {
             <h1 className="text-lg md:max-w-xl">Our multidisciplinary team and industry partners give you access to an extensive network of services, tools, and technologies.</h1>
          </div>
 
-         <div className="grid grid-cols-2 my-11 gap-y-5 md:gap-y-10 md:grid-cols-3 lg:grid-cols-6 gap-4">
+         <div className="grid grid-cols-2 my-11 md:my-20 gap-y-5 md:gap-y-10 md:grid-cols-3 lg:grid-cols-6 gap-4">
          {techStack && techStack.map((icon) => (
           <div key={icon.id} className="flex justify-center items-center">
           <Image src={icon.icon} alt={`webcrunchy${icon.id}`} className="w-24 h-24 object-contain" />

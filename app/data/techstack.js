@@ -1,12 +1,11 @@
 import magento from '../images/magento.png';
 import ecommerce from '../images/ecommerce.png';
-import lavavel from '../images/Laravel.png';
-import jquery from '../images/jquery.png';
 import android from '../images/android.png';
 import css from '../images/css-3.png';
 import html from '../images/html.png';
 import stripe from '../images/stripe.png';
 import angular from '../images/angularjs.png';
+import next from '../images/nextjs.png'
 import node from '../images/nodejs.png';
 import java from '../images/java.png';
 import javascript from '../images/js.png';
@@ -17,6 +16,9 @@ import github from '../images/github.png';
 import vscode from '../images/visual-basic.png';
 import swift from '../images/swift.png';
 import mysql from '../images/mysql.png'
+import graphql from '../images/graphql.png'
+import jquery from '../images/jquery.png'
+import mongodb from '../images/mongodb.png'
 
 export const techStack = [
     { id: 5, icon: android },
@@ -35,7 +37,9 @@ export const techStack = [
     { id: 18, icon: swift },
     {id: 19, icon: mysql},
     { id: 1, icon: magento },
-    { id: 2, icon: ecommerce },
-    { id: 3, icon: lavavel },
-    { id: 4, icon: jquery },
+    {id: 50, icon: next},
+    {id: 46, icon: ecommerce},
+    {id: 34, icon: graphql},
+    {id: 78, icon: jquery}, 
+    {id: 67, icon: mongodb}
 ];
