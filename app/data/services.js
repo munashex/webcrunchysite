@@ -2,8 +2,7 @@ import { FaCode } from "react-icons/fa";
 import { FaCodeCompare } from "react-icons/fa6";
 import { RiShoppingCart2Line } from "react-icons/ri";  
 
-
-export const Services = [
+ const services = [
     {
     name: "Development", 
     description: "Collaborate with Webcrunchy's skilled team to create robust software applications, whether you're a new start-up or an established company aiming to stand out with innovative ideas!", 
@@ -23,3 +22,5 @@ export const Services = [
   link: "ecommerce"
 }
  ]
+
+ export default services

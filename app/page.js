@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { TbCircleDot } from "react-icons/tb";
-import { Services } from "./data/services";
-import { featuredProducts } from "./data/featuredProducts";
+import services from "./data/services";
+import featured from "./data/featuredProducts";
 import Link from 'next/link';
 import Image from 'next/image';
 import AboutOverview from "./components/AboutOverview";
@@ -50,7 +50,7 @@ const Home = () => {
           <h1 className="text-center text-2xl md:text-3xl font-bold lg:text-4xl">Our Services</h1>
 
           <div className="flex flex-col lg:flex-row gap-y-20 mt-9 lg:mt-14 gap-x-16">
-            {Services.map((service) => (
+            {services.map((service) => (
               <div key={service.name} className="flex flex-col items-center gap-y-4">
                 <span>{service.icon}</span>
                 <h1 className="text-2xl lg:text-3xl font-bold">{service.name}</h1>
@@ -70,7 +70,7 @@ const Home = () => {
             <h1 className="text-center text-2xl md:text-3xl font-bold lg:text-4xl">Featured Projects</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-11 mt-6 md:mt-10">
-              {featuredProducts.map((product) => (
+              {featured.map((product) => (
                 <div key={product.name} className="flex flex-col items-center">
                   <Image src={product.image} alt={product.name} className="w-full rounded-md" />
                   <h1 className="mt-4 text-xl md:text-2xl font-bold">{product.name}</h1>
@@ -94,4 +94,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
 

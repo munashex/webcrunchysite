@@ -4,7 +4,7 @@ import eventBook from '../images/eventBook.png'
 import reedGraduation from '../images/reedGraduation.jpg' 
 
 
-export const featuredProducts = [ 
+ const featured = [ 
 {
 image: eventBook, 
 name: "Event Bookings", 
@@ -26,3 +26,5 @@ name: "Engine",
 description: "A technology driven on-demand digital fulfilment company, helping businesses facilitate their ideas, streamline their operations and connect to their customers", 
 }
 ]
+
+export default featured
