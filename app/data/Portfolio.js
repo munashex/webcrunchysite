@@ -177,4 +177,17 @@ const webdevelopment = [
 
 ]
 
-export {developments, ecommerce, webdesign, webdevelopment}
+const featuredWebdesign = [ 
+    {
+    name: "Cherry Energy Solutions", 
+    description: "A modern responsive site for  energy solution provider",
+    image: cherry
+    }, 
+    {
+    name: "Stronger Sales Teams", 
+    description: "Stronger Sales Teams is a leading provider of training and coaching solutions to boost sales performance", 
+    image: stronger
+    }
+]
+
+export {developments, ecommerce, webdesign, webdevelopment, featuredWebdesign}

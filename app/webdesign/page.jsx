@@ -4,6 +4,8 @@ import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowDownLong } from "react-icons/fa6";
 import Image from 'next/image'
 import { webdesignData } from '../data/webdesign';
+import { featuredWebdesign } from '../data/Portfolio';
+
 
 const Page = () => {
     // Create outstanding websites. Achieve business success.
@@ -58,6 +60,24 @@ const Page = () => {
         </div>
       ))}
     </div>
+
+    <div className="bg-black px-4 lg:px-24 py-8 lg:py-12 my-12 md:my-16 text-white">
+      <h1 className="text-3xl font-bold lg:text-4xl mb-8">Featured Website Design Projects</h1>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+    {featuredWebdesign.map((project) => (
+      <div key={project.name} className="bg-white  overflow-hidden">
+        <Image src={project.image} className="w-full h-auto" alt={project.name} />
+        <div className="p-4 text-black">
+          <h1>Web Design</h1>
+          <h2 className="text-lg font-bold my-2 lg:text-xl">{project.name}</h2>
+          <p className="mb-4">{project.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
 
         </div>
     )
