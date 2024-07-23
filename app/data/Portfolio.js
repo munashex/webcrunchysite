@@ -215,4 +215,17 @@ name: "Central Vic Meats",
 description: "An attractive website and online ordering of mouth-watering  meats",
 }
 ]
-export {developments, ecommerce, webdesign, webdevelopment, featuredWebdesign, featuredWebdev, featuredEcommerce}
+
+const featuredMobile = [
+    {
+    image: businessPlaza, 
+    name: "Business Plaza", 
+    description: "Business Plaza provides an all-rounder club-management solution to efficiently meet diverse organisational needs."
+    }, 
+    {
+    image: shared, 
+    name: "Shared Tables", 
+     description: "SharedTables is an innovation and training hub for young chefs and those who aspire to be one."
+    }
+]
+export {developments, ecommerce, webdesign, webdevelopment, featuredWebdesign, featuredWebdev, featuredEcommerce, featuredMobile}

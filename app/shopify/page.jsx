@@ -41,7 +41,7 @@ const Shopify = () => {
                 </div>
             </div>
 
-         {/* our webdesign services */}
+         {/* our shopify services */}
       <div className="space-y-16">
        {shopifyData.map((service, index) => (
         <div key={service.id} className={`flex flex-col md:flex-row space-y-5 lg:items-center ${index % 2 === 1 ? 'bg-black pt-11 lg:pt-16 text-white' : ''}`}>
