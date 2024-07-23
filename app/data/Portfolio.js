@@ -190,4 +190,29 @@ const featuredWebdesign = [
     }
 ]
 
-export {developments, ecommerce, webdesign, webdevelopment, featuredWebdesign}
+const featuredWebdev = [
+{
+name: "Business Plaza", 
+description: "Business Plaza provides an all-rounder club-management solution to efficiently meet diverse organisational needs.",
+image: businessPlaza
+}, 
+{
+image: interlux,
+name: "Interlux Design", 
+description: "Interlux Design provides online interior and window covering services with an experience of over 30 years.",
+}
+]
+
+const featuredEcommerce = [
+{
+image: gril, 
+name: "Gridlock Coffee", 
+description: "An elegant website and online store selling roasted coffee and equipment for the award-winning gridlock coffee."
+}, 
+{
+image: vicmts, 
+name: "Central Vic Meats", 
+description: "An attractive website and online ordering of mouth-watering  meats",
+}
+]
+export {developments, ecommerce, webdesign, webdevelopment, featuredWebdesign, featuredWebdev, featuredEcommerce}
