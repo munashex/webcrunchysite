@@ -5,7 +5,6 @@ import featured from "./data/featuredProducts";
 import Link from 'next/link';
 import Image from 'next/image';
 import AboutOverview from "./components/AboutOverview";
-import Review from "./components/Review";
 
 
 const Home = () => {
@@ -86,7 +85,6 @@ const Home = () => {
           </div>
           
           <AboutOverview/>
-          <Review/>
         </div>
       </div>
     </div>

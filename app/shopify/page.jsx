@@ -46,7 +46,7 @@ const Shopify = () => {
        {shopifyData.map((service, index) => (
         <div key={service.id} className={`flex flex-col md:flex-row space-y-5 lg:items-center ${index % 2 === 1 ? 'bg-black pt-11 lg:pt-16 text-white' : ''}`}>
           <div className={`space-y-5 px-7 lg:px-24 md:w-1/2 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
-            <h1 className="text-2xl font-bold">{service.name}</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold">{service.name}</h1>
             <h1>{service.description}</h1>
             <h1 className="hover:text-[#F47521] inline-flex gap-2 font-bold text-xl items-center">
               Get A Quote <FaArrowRight color='#F47521' />
