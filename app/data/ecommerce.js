@@ -11,7 +11,14 @@ import ecommerce2 from '../images/ecommerce2.webp'
 import shopify from '../images/shopify.webp' 
 import webcommander from '../images/webcommander.webp' 
 import wooecommerce from '../images/wooecommerce.webp' 
-import bigcommerce from '../images/bigcommerce.webp'
+import bigcommerce from '../images/bigcommerce.webp' 
+import  ecommerceicon from '../images/ecomerce-icon.svg' 
+import design from '../images/design-icon.svg' 
+import developer from '../images/developer-icon.svg' 
+import ecommerceseo from '../images/ecomerce-seo-icon.svg' 
+import secure from '../images/secure-icon.svg' 
+import continuesupport from '../images/continue-support-icon.svg'
+import tools from '../images/tools.webp'
 
 const data1 = [
     {
@@ -152,29 +159,48 @@ const dataseven = [
 
 const dataeight = [
     {
+    image: ecommerceicon,
     name: "Ecommerce strategy", 
     description: "We thoroughly evaluate your current business position. Our team of experts will help you identify the best approach through data analysis and comprehensive research."
     }, 
     {
+    image: design,
     name: "Ecommerce SEO", 
     description: "We provide SEO-friendly ecommerce solutions to attract the right kind of clicks that lead to sales. Reach customers who are actively searching for your products or services."
     }, 
     {
+    image: developer,
     name: "Design", 
     description: "Using a customer-centric approach, we develop an ecommerce website design concept for you. We will work together until the final design is approved, ensuring a seamless experience for your customers."
     }, 
     {
+    image: ecommerceseo,
     name: "Secured hosting", 
     description: "We will host your website on a secure cloud infrastructure designed for maximum efficiency. Our hosting environment ensures your site dynamically auto-scales to handle any potential traffic surges proactively."
     }, 
     {
+    image: secure,
     name: "Development", 
     description: "We provide flexible ecommerce website development services to transform your design into a fully operational online store. Our solution blends ease of use with attractive design across platforms to deliver exceptional results."
     }, 
     {
+    image: continuesupport,
     name: "Continuous support", 
     description: "Think of us as a partner in your long-term success. We offer ongoing support and maintenance to ensure your investment is consistently monitored and to contribute to your sustained success."
     }
 ]
 
-export {data1, data2, data3, data4, datafive, datasix, dataseven}
+
+const datanine = [ 
+    {
+     image: tools, 
+     name1: "ERP/Accounting integration", 
+     description1: "Integrated ERP accounting management software goes beyond basic accounting by offering insights into workforce and resource allocation, enhancing productivity. With your ecommerce platform managing order processing, payment collection, and inventory, software like Xero, NetSuite, MYOB, and Odoo can help automate and integrate these tasks effectively.",
+     name2: "POS integration", 
+     description2: "Struggling to reduce manual labor and obtain detailed reports for data-driven decisions with your online store? Integrating your POS system with your ecommerce site helps you expand sales reach, avoid over-selling with real-time inventory updates, eliminate manual data entry, and improve cross-channel customer experiences with promotions and discounts. Platforms like Vend, Square, and Shopify provide top-notch POS solutions for seamless integration.",
+     name3: "Outbound marketing", 
+     description3: "Looking to build your brand and reach a wider audience for your ecommerce business? Opt for outbound marketing. By integrating your email marketing strategy, you can directly connect with customers and nurture relationships over time. Platforms like Klaviyo, Salesforce, Zoho, HubSpot, and Mailchimp offer comprehensive solutions for automation, campaigns, and segmentation, all while enhancing sales with real-time data."
+    }  
+]
+
+export {data1, data2, data3, data4, datafive, datasix, dataseven, dataeight, datanine}

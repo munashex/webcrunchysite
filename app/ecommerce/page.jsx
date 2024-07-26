@@ -1,8 +1,9 @@
 import ecommerce from '../images/ecommerce.jpg'
 import Link from 'next/link';
 import { FaArrowRight, FaArrowDownLong } from "react-icons/fa6";
-import { data1, data2, data3, data4, datafive, datasix, dataseven } from '../data/ecommerce';
+import { data1, data2, data3, data4, datafive, datasix, dataseven, dataeight, datanine} from '../data/ecommerce';
 import Image from 'next/image';
+import { featuredEcommerce } from '../data/Portfolio';
 
 
  
@@ -229,11 +230,93 @@ const Ecommerce = () => {
 
     </div>
 
-    {/* service 7 */} 
-    <div className="bg-black"> 
-
+    {/* service 8 */} 
+    <div className="bg-black py-11 md:py-16"> 
+    <div className="p-1 mx-7 lg:mx-16 text-white"> 
+        <h1 className="text-2xl lg:text-4xl font-bold text-center">A comprehensive ecommerce agency</h1>
+        
+        <div className="my-16  grid grid-cols-1  md:grid-cols-2 gap-y-11 md:gap-y-16 md:gap-x-11">
+          {dataeight.map((service) => (
+            <div key={service.name} className="space-y-2 flex flex-col items-center md:items-start md:flex-row md:gap-x-6 lg:gap-x-9"> 
+              <Image src={service.image} alt="webcrunchy"/> 
+              <div className="space-y-3"> 
+                <h1 className="text-xl lg:text-2xl font-bold text-center md:text-start">{service.name}</h1> 
+                <h1 className="lg:max-w-md text-center md:text-start">{service.description}</h1>
+              </div>
+            </div>
+          ))}
+        </div>
+      
+      </div>
     </div>
 
+
+    {/* service 9 */} 
+    <div className="mx-7 p-1 lg:mx-16 my-11 lg:my-20"> 
+      <div className="space-y-4"> 
+       <h1 className="text-center font-bold text-2xl lg:text-4xl">Seamless integration with your preferred tools</h1>
+        <h1 className="text-center md:max-w-4xl md:text-lg md:mx-auto">Don't give up your favorite tools for a new ecommerce site. Whether it’s accounting software, a CRM, inventory management, or a POS, we can integrate it seamlessly. We specialize in complex software and API integrations to save you time and streamline your workflow.</h1>
+       </div> 
+
+       <div className="mt-11 lg:mt-16">
+        {datanine.map((service) => (
+          <div key={service.name1} className="grid grid-cols-1 gap-y-11 items-center lg:grid-cols-2"> 
+             {/* grid item 1 */}
+             <Image src={service.image} alt="webcrunchy"/>
+              
+              {/* grid item 2 */}
+             <div className="space-y-9 lg:bg-[#F3F5F8] lg:px-24 lg:py-7 rounded-xl">
+             <div className="space-y-3"> 
+               <h1 className="text-xl lg:text-2xl font-bold">{service.name1}</h1>
+                <h1 className="lg:max-w-lg">{service.description1}</h1>
+             </div>
+             <div className="space-y-3"> 
+               <h1 className="text-xl lg:text-2xl font-bold">{service.name2}</h1>
+                <h1 className="lg:max-w-lg">{service.description2}</h1>
+             </div>
+             <div className="space-y-3"> 
+               <h1 className="text-xl lg:text-2xl font-bold">{service.name3}</h1>
+                <h1 className="lg:max-w-lg">{service.description3}</h1>
+             </div>
+             </div>
+          </div>
+        ))}
+       </div>
+    </div>
+
+
+    {/* featured ecommerce projects */}
+    <div className="bg-black px-4 lg:px-24 py-8 lg:py-12 my-12 md:my-16 text-white">
+      <h1 className="text-3xl font-bold lg:text-4xl mb-8">Featured Ecommerce Website Projects</h1>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+    {featuredEcommerce.map((project) => (
+      <div key={project.name} className="bg-white  overflow-hidden">
+        <Image src={project.image} className="w-full h-auto" alt={project.name} />
+        <div className="p-4 text-black">
+          <h1>Ecommerce</h1>
+          <h2 className="text-lg font-bold my-2 lg:text-xl">{project.name}</h2>
+          <p className="mb-4">{project.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+  <Link href="/portfolio" className="text-white my-16 hover:bg-white items-center  inline-flex gap-2 hover:text-black font-bold border p-2 px-8 text-lg">
+  <span>View all Portfolio</span>
+  <span><FaArrowRight/></span>
+  </Link>
+  </div>
+
+
+     <div className="mx-7 lg:mx-16 p-1  bg-[#FEEEE1] my-24  border border-[#F47521] rounded-xl">
+     <div className="flex flex-col py-11 md:py-20  items-center md:flex-row md:px-9  md:justify-between gap-y-11">
+      <div className="space-y-3  md:max-w-xl lg:max-w-3xl">
+        <h1 className="text-2xl lg:text-4xl font-extrabold text-center md:text-start">Considering an online business model?</h1>
+        <h1 className="text-center md:text-start px-1 md:px-0">Create a website your customers will love to shop on. With our extensive expertise, you can rely on us for top-notch custom web design services.</h1>
+      </div> 
+      <Link href="/contact" className="text-lg bg-[#F47521] hover:bg-black py-2 px-9 font-bold text-white inline-flex items-center gap-2">Get A Quote <FaArrowRight size={22}/></Link>
+     </div>
+    </div>
 </div>
     )
 }
