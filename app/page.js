@@ -4,10 +4,11 @@ import services from "./data/services";
 import featured from "./data/featuredProducts";
 import Link from 'next/link';
 import Image from 'next/image';
-import AboutOverview from "./components/AboutOverview";
+import AboutOverview from './components/AboutOverview';
 
 
-const Home = () => {
+
+const Page = () => {
   const videoUrl = "https://res.cloudinary.com/ditls34gp/video/upload/v1720525805/vhptrt7mjlyxhdah2dia.mp4";
 
   return (
@@ -91,7 +92,7 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Page;
 
 
 

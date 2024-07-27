@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
+import Link from 'next/link'
 
 const Navbar = () => {
 
@@ -36,16 +37,15 @@ const Navbar = () => {
             {openNav ? 
             <div className="text-[#F5FFFA] h-screen flex gap-y-6 flex-col lg:hidden">
                 <div className="text-xl font-semibold space-y-3 mx-7 my-5">
-                    <h1>Portfolio</h1> 
-                    <h1>Services</h1>
-                    <h1>About Us</h1>
-                    <h1>Blog</h1>
+                    <Link href="/portfolio">Portfolio</Link> 
+                    <Link href="/services">Services</Link>
+                    <Link href="/about">About Us</Link>
                 </div>
                 
-                <button className="text-lg mx-5 inline-flex justify-center items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220]  p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
+                <Link href="/contact" className="text-lg mx-5 inline-flex justify-center items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220]  p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
                     <span>Contact Us</span>
                     <span><FaArrowRight size="21"/></span>
-                </button>
+                </Link>
                 
                 <div className="mx-7 my-3 flex flex-col gap-y-2"> 
                     <h1 className="text-xl font-semibold">Call Us Now</h1> 
@@ -68,17 +68,19 @@ const Navbar = () => {
                         <h1 className="inline-flex items-center gap-2">Services {toggleServices ? <IoIosArrowUp/> : <IoIosArrowDown/>}</h1> 
                         {toggleServices && (
                             <div className="absolute top-16 gap-3 flex flex-col items-center  bg-white right-64 py-7 px-8 rounded-t-md">
-                                <h1 className="text-black hover:text-[#E34234]">Website Design</h1> 
-                                <h1 className="text-black hover:text-[#E34234]">Ecommerce Website Design</h1> 
-                                <h1 className="text-black hover:text-[#E34234]">Website Development</h1>
+                                <Link href="/webdesign" className="text-black hover:text-[#E34234]">Website Design</Link> 
+                                <Link href="/ecommerce" className="text-black hover:text-[#E34234]">Ecommerce Website Design</Link> 
+                               <Link href="webdev" className="text-black hover:text-[#E34234]">Website Development</Link>
+                               <Link href="/mobileapp" className="text-black hover:text-[#E34234]">Mobile App Development</Link>
+                               <Link href="shopify" className="text-black hover:text-[#E34234]">Shopify Web Development</Link>
                             </div>
                         )}
                     </div>
                     <h1>About Us</h1>  
-                    <button className="text-lg inline-flex items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220] p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
+                    <Link href="/contact" className="text-lg inline-flex items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220] p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
                         <span>Contact Us</span>
                         <span><FaArrowRight size="21"/></span>
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
