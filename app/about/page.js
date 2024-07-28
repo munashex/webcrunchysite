@@ -12,17 +12,17 @@ const About = () => {
         <div className="">
 
           <div className="w-full bg-[#013220] space-y-4">
-         <div className="p-1 mx-7 lg:mx-16 py-8 lg:py-16 flex flex-col gap-y-11">
+         <div className="p-1 mx-2 md:mx-7 lg:mx-16 py-8 lg:py-16 flex flex-col gap-y-11">
          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold">An innovative and creative digital agency</h1>
          <span className="animate-bounce"><FaCircleArrowDown size={45} color="white"/></span>
          </div>
         </div> 
         
-        <div className="md:max-w-xl p-1 mx-7 lg:mx-16 mt-12 md:mb-9">
+        <div className="md:max-w-xl p-1 mx-2 md:mx-7 lg:mx-16 mt-12 md:mb-9">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">Achieving online success effortlessly has been our slogan and vision since 2019</h1>
         </div>
 
-        <div className="md:max-w-4xl lg:max-w-7xl p-1 mb-12 mx-7 lg:mx-16 space-y-3">
+        <div className="md:max-w-4xl lg:max-w-7xl p-1 mb-12 mx-2 md:mx-7 lg:mx-16 space-y-3">
           {aboutData.map((info) => (
             <div key={info.id}> 
             <h1 className="text-lg">{info.description}</h1>
@@ -30,7 +30,7 @@ const About = () => {
           ))}
         </div>
 
-        <div className="space-y-16 p-1  mx-7 lg:mx-24 md:mt-24">
+        <div className="space-y-16 p-1 mx-2  md:mx-7 lg:mx-24 md:mt-24">
     {visionData.map((info) => (
         <div key={info.name} className="flex flex-col md:flex-row gap-3 md:gap-9 md:items-center md:border-t-2">
             {/* Image section */}

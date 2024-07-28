@@ -7,7 +7,7 @@ import Image from 'next/image'
 const PortfolioTabs = () => {
     return (
         <div className="w-full bg-[#F3F3F3]">
-        <div className="p-1 mx-7 space-y-8 lg:mx-16 py-8 md:py-16 lg:py-20">
+        <div className="p-1  md:mx-7 space-y-8 lg:mx-16 py-8 md:py-16 lg:py-20">
             <Tabs>
                 <TabList className="border-none md:sticky bg-[#F3F3F3] bg-opacity-90 rounded-xl max-w-2xl mx-auto p-2 w-[90%] top-8 right-0 left-0 flex flex-col gap-x-8 lg:gap-x-11 md:flex-row items-center gap-y-3 text-gray-800">
                     <Tab className="md:text-lg focus:outline-none cursor-pointer font-bold" selectedClassName="border-b-2 border-[#0000FF] text-[#0000FF] font-extrabold">Development</Tab>
@@ -17,7 +17,7 @@ const PortfolioTabs = () => {
                 </TabList>
                 
         <TabPanel>
-        <div className="space-y-16 md:mx-16 lg:mx-20 my-11 md:my-16">
+        <div className="space-y-16 mx-2 md:mx-16 lg:mx-20 my-11 md:my-16">
           {developments.map((project, index) => (
             <div key={project.name} className="shadow flex flex-col lg:flex-row bg-white">
               <div className={`lg:w-1/2 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
@@ -47,7 +47,7 @@ const PortfolioTabs = () => {
       </TabPanel>
 
       <TabPanel>
-        <div className="space-y-16 md:mx-16 lg:mx-20 my-11 md:my-16">
+        <div className="space-y-16 mx-2 md:mx-16 lg:mx-20 my-11 md:my-16">
           {ecommerce.map((project, index) => (
             <div key={project.name} className="shadow flex flex-col lg:flex-row bg-white">
               <div className={`lg:w-1/2 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
@@ -77,7 +77,7 @@ const PortfolioTabs = () => {
       </TabPanel>
 
       <TabPanel>
-        <div className="space-y-16 md:mx-16 lg:mx-20 my-11 md:my-16">
+        <div className="space-y-16 mx-2 md:mx-16 lg:mx-20 my-11 md:my-16">
           {webdesign.map((project, index) => (
             <div key={project.name} className="shadow flex flex-col lg:flex-row bg-white">
               <div className={`lg:w-1/2 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
@@ -107,7 +107,7 @@ const PortfolioTabs = () => {
       </TabPanel>
 
       <TabPanel>
-        <div className="space-y-16 md:mx-16 lg:mx-20 my-11 md:my-16">
+        <div className="space-y-16 mx-2 md:mx-16 lg:mx-20 my-11 md:my-16">
           {webdevelopment.map((project, index) => (
             <div key={project.name} className="shadow flex flex-col lg:flex-row bg-white">
               <div className={`lg:w-1/2 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>

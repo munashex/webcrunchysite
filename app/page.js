@@ -25,7 +25,7 @@ const Page = () => {
           {/* Add additional sources for different video formats if needed */}
           Your browser does not support the video tag.
         </video>
-        <div className="relative z-10 mx-7 lg:mx-20 top-11">
+        <div className="relative z-10 mx-2 md:mx-7 lg:mx-20 top-11">
           <div className="space-y-12">
             <div className="space-y-5 max-w-none lg:max-w-3xl">
               <h1 className="text-white text-xl inline-flex gap-x-3 items-center md:text-xl lg:text-2xl">
@@ -46,7 +46,7 @@ const Page = () => {
 
       {/* Our service section */}
       <div className="relative bottom-44 lg:bottom-24 left-0 right-0">
-        <div className="mx-7 md:mx-16 lg:mx-20">
+        <div className="mx-2  md:mx-16 lg:mx-20">
           <h1 className="text-center text-2xl md:text-3xl font-bold lg:text-4xl">Our Services</h1>
 
           <div className="flex flex-col lg:flex-row gap-y-20 mt-9 lg:mt-14 gap-x-16">

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const OurTools = () => {
 
     return (
-        <div className="p-1 mx-7 lg:mx-16 py-8 lg:py-16 mb-12">
+        <div className="p-1 mx-2 md:mx-7 lg:mx-16 py-8 lg:py-16 mb-12">
          <div className="space-y-2 md:space-y-3">
             <h1 className="text-3xl font-bold  md:text-4xl lg:text-5xl">Our tools & technologies</h1>
             <h1 className="text-lg md:max-w-xl">Our multidisciplinary team and industry partners give you access to an extensive network of services, tools, and technologies.</h1>
