@@ -6,6 +6,24 @@ import Image from 'next/image'
 import { webdesignData } from '../data/webdesign';
 import { featuredWebdesign } from '../data/Portfolio';
 
+export const metadata = {
+  title: "Web design",
+  description: "Create outstanding websites. Achieve business success.",
+  keywords: ['Website design', 'Ecommerce Website Design', 'Webcrunchy','Web Development', 'Mobile App Development', 'Shopify Web Design'],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
 
 const Page = () => {
  

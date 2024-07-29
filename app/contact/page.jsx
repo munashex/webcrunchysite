@@ -2,6 +2,25 @@
 
 import { IoMdArrowRoundForward } from "react-icons/io";
 
+export const metadata = {
+  title: "Contact",
+  description: "Achieving online success effortlessly has been our slogan and vision since 2019",
+  keywords: ['Website design', 'Ecommerce Website Design', 'Webcrunchy','Web Development', 'Mobile App Development', 'Shopify Web Design'],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
 const Contact = () => {
 
   return (

@@ -2,7 +2,24 @@
 import { FaCircleArrowDown } from "react-icons/fa6"
 import PortfolioTabs from "../components/PortfolioTabs"
 
-
+export const metadata = {
+    title: "Portfolio",
+    description: "Whether it's a simple personal site or a complex enterprise application, we are dedicated to every detail of our work.",
+    keywords: ['Website design', 'Ecommerce Website Design', 'Webcrunchy','Web Development', 'Mobile App Development', 'Shopify Web Design'],
+    robots: {
+      index: true,
+      follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: false,
+        noimageindex: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
 
 const Portfolio = () => {
 

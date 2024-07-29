@@ -58,7 +58,7 @@ function page() {
 
         <div className="flex flex-col md:flex-row my-12 md:my-32 gap-y-16 gap-x-24 lg:gap-x-32 md:justify-center items-center">
         <div className="flex flex-col items-center"> 
-         <h1 className="inline-flex items-center gap-1 font-bold text-4xl">15 <FaPlus size={23}/> </h1>
+         <h1 className="inline-flex items-center gap-1 font-bold text-4xl">4 <FaPlus size={23}/> </h1>
          <h1>Years of Experience</h1>
         </div>
 

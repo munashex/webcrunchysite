@@ -5,6 +5,25 @@ import webdevbanner from '../images/webdev.jpg';
 import { webdevData } from '../data/webdev'; 
 import { featuredWebdev } from '../data/Portfolio';
 
+export const metadata = {
+  title: "web development",
+  description: "Obtain top-tier web and mobile applications.",
+  keywords: ['Website design', 'Ecommerce Website Design', 'Webcrunchy','Web Development', 'Mobile App Development', 'Shopify Web Design'],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
 const Webdev = () => {
     return (
         <div>

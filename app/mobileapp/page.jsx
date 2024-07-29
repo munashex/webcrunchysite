@@ -5,6 +5,25 @@ import Image from 'next/image';
 import { mobileData } from '../data/mobileData';
 import { featuredMobile } from '../data/Portfolio';
 
+export const metadata = {
+  title: "Mobile",
+  description: "Convert your concept into an interactive mobile application.",
+  keywords: ['Website design', 'Ecommerce Website Design', 'Webcrunchy','Web Development', 'Mobile App Development', 'Shopify Web Design'],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
 const Page = () => {
 
     return (

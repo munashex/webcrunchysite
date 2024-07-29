@@ -5,6 +5,25 @@ import Image from 'next/image';
 import { shopifyData } from '../data/shopifyData';
 import { featuredEcommerce } from '../data/Portfolio';
 
+export const metadata = {
+  title: "Shopify",
+  description: "Shopify specialists for Ecommerce design and development",
+  keywords: ['Website design', 'Ecommerce Website Design', 'Webcrunchy','Web Development', 'Mobile App Development', 'Shopify Web Design'],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+};
+
 const Shopify = () => {
 
     return (
