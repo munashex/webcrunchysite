@@ -90,11 +90,12 @@ const Navbar = () => {
                         <h1 className="inline-flex items-center gap-2">Services {toggleServices ? <IoIosArrowUp/> : <IoIosArrowDown/>}</h1> 
                         {toggleServices && (
                             <div className="absolute top-16 gap-3 flex flex-col items-center  bg-white right-64 py-7 px-8 rounded-t-md">
-                               <Link href="/ecommerce" className="text-black hover:text-[#E34234]">Ecommerce Website Design</Link> 
+                        
                                <Link href="/webdesign" className="text-black hover:text-[#E34234]">Website Design</Link> 
                                <Link href="webdev" className="text-black hover:text-[#E34234]">Website Development</Link>
                                <Link href="/mobileapp" className="text-black hover:text-[#E34234]">Mobile App Development</Link>
                                <Link href="shopify" className="text-black hover:text-[#E34234]">Shopify Web Development</Link>
+                               <Link href="/ecommerce" className="text-black hover:text-[#E34234]">Ecommerce Website Design</Link> 
                             </div>
                         )}
                     </div>
@@ -110,3 +111,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

@@ -26,18 +26,20 @@ const Footer = () => {
                 <h1 className="mx-7">Copyright © 2024 Webcrunchy</h1>
                 </div> 
 
-                    <div className="space-y-1 md:mx-auto">
+                    <div className="space-y-2 md:mx-auto">
                         <h1 className="text-lg font-bold">Gauteng</h1>  
                         <h1>Crystal Park, Benoni, 1515</h1> 
-                        <h1>+27 6354 60625</h1>
+                        <a href="tel:+27635460625" className="underline underline-offset-2 text-lg">+27 6354 60625</a>
                     </div>
 
                     <div className="space-y-3 md:mx-auto">
                         <h1 className="text-lg font-bold">Services</h1>  
-                        <div className="space-y-1">
-                            <h1>Web Development</h1> 
-                            <h1>Ecommerce Website Design</h1> 
-                            <h1>Website Design</h1>
+                        <div className="flex flex-col gap-y-1">
+                        <Link href="/webdesign" className="text-white hover:text-[#E34234]">Website Design</Link> 
+                        <Link href="webdev" className="text-white hover:text-[#E34234]">Website Development</Link>
+                        <Link href="/mobileapp" className="text-white hover:text-[#E34234]">Mobile App Development</Link>
+                        <Link href="shopify" className="text-white hover:text-[#E34234]">Shopify Web Development</Link>
+                        <Link href="/ecommerce" className="text-white hover:text-[#E34234]">Ecommerce Website Design</Link> 
                         </div>
                     </div>
 
