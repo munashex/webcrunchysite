@@ -31,7 +31,7 @@ const Page = () => {
         <div>
          
          {/* only on small screens */}
-         <div className="py-16 bg-black  my-11 px-8 md:hidden">
+         <div className="py-16  bg-[#013220] mb-16  px-8 md:hidden">
            <h1 className="text-white my-9 text-2xl font-semibold">Create outstanding websites. Achieve business success.</h1>
            <Link href="/portfolio" className="text-white hover:bg-white items-center inline-flex gap-2 hover:text-black font-bold border p-2 px-8 text-lg">
             <span>View Portfolio</span>
@@ -40,9 +40,9 @@ const Page = () => {
          </div> 
 
          {/* only on md and lg screens */}
-         <div className="hidden md:flex w-full my-8 lg:my-16">
+         <div className="hidden md:flex w-full mb-24">
 
-            <div className="w-1/2 bg-black lg:relative">
+            <div className="w-1/2 bg-[#013220] lg:relative">
             <div className="mx-6 lg:mx-16 lg:absolute bottom-32 right-0 left-0">
             <h1 className="text-white my-9 text-2xl lg:text-4xl lg:-leading-7 font-semibold md:max-w-lg max-w-xl">Create outstanding websites. Achieve business success.</h1>
              <Link href="/portfolio" className="text-white hover:bg-white items-center inline-flex gap-2 hover:text-black font-bold border p-2 px-8 text-lg">

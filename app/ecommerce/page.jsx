@@ -11,8 +11,8 @@ const Ecommerce = () => {
 
     return (
     <div className="">
-     {/* only on small screens */}
-     <div className="py-16 bg-black my-11 px-8 md:hidden">
+     {/* only on small screens */} 
+            <div className="py-16 bg-[#013220] px-8 md:hidden">
                 <h1 className="text-white my-9 text-2xl font-semibold">
                 Acquire an ecommerce website that boosts sales and maximizes ROI.
                 </h1>
@@ -20,10 +20,11 @@ const Ecommerce = () => {
                     <span>View  Portfolio</span>
                     <span><FaArrowRight /></span>
                 </Link>
-            </div>  
+            </div>
 
-            <div className="hidden md:flex w-full my-8 lg:my-16">
-                <div className="w-1/2 bg-black lg:relative">
+
+            <div className="hidden md:flex w-full">
+                <div className="w-1/2 bg-[#013220] lg:relative">
                     <div className="mx-6 lg:mx-16 lg:absolute bottom-32 right-0 left-0">
                         <h1 className="text-white my-9 text-2xl lg:text-4xl lg:-leading-7 font-semibold md:max-w-lg max-w-xl">
                         Acquire an ecommerce website that boosts sales and maximizes ROI.
