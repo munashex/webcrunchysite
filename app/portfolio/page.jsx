@@ -6,7 +6,7 @@ import PortfolioTabs from "../components/PortfolioTabs"
 const Portfolio = () => {
 
     return (
-        <div> 
+        <div className=""> 
         <div className="w-full bg-[#013220]">
 
          <div className="p-1 mx-2  md:mx-7 space-y-8 lg:mx-16 py-8 lg:py-16 flex flex-col gap-y-11 text-white">

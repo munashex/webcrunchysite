@@ -40,8 +40,8 @@ const Navbar = () => {
 
             {/* navbar links on small screens */}
             {openNav ? 
-            <div className="text-[#F5FFFA] h-screen flex gap-y-11 flex-col lg:hidden">
-                  <div className="text-xl font-semibold space-y-5 flex flex-col mx-7 my-5">
+            <div className="text-[#F5FFFA] h-screen flex gap-y-11  flex-col lg:hidden">
+                  <div className="text-xl font-semibold space-y-5 flex flex-col mx-7 my-5 animate-fade-down">
                     <Link href="/portfolio" onClick={() => setOpenNav(!openNav)}>Portfolio</Link> 
                     <button  className="inline-flex outline-none items-center gap-11" onClick={openServiceSm}>
                         Services 
@@ -49,7 +49,7 @@ const Navbar = () => {
                     </button>
                     {toggleServices ?  
                     ( 
-                    <div className="flex flex-col gap-y-3 text-lg"> 
+                    <div className="flex flex-col gap-y-3 text-lg animate-fade-down"> 
                       <Link href="/webdesign" onClick={() => setOpenNav(!openNav)}>Website Design</Link> 
                       <Link href="/ecommerce" onClick={() => setOpenNav(!openNav)}>Ecommerce Website Design</Link> 
                       <Link href="/webdev" onClick={() => setOpenNav(!openNav)}>Website Development</Link>
@@ -62,12 +62,12 @@ const Navbar = () => {
                     <Link href="/about" onClick={() => setOpenNav(!openNav)}>About Us</Link>
                 </div>
                 
-                <Link onClick={() => setOpenNav(!openNav)} href="/contact" className="text-lg mx-5 inline-flex justify-center items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220]  p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
+                <Link onClick={() => setOpenNav(!openNav)} href="/contact" className="text-lg animate-fade-down animate-delay-100 mx-5 inline-flex justify-center items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220]  p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
                     <span>Contact Us</span>
                     <span><FaArrowRight size="21"/></span>
                 </Link>
                 
-                <div className="mx-7 my-3 flex flex-col gap-y-2"> 
+                <div className="mx-7 my-3 flex flex-col gap-y-2 animate-fade-down animate-delay-150"> 
                     <h1 className="text-xl font-semibold">Call Us Now</h1> 
                     <a href="tel:+27635460625" className="text-xl font-semibold hover:underline">+2763 546 0625</a>
                 </div>
@@ -89,7 +89,7 @@ const Navbar = () => {
                     >
                         <h1 className="inline-flex items-center gap-2">Services {toggleServices ? <IoIosArrowUp/> : <IoIosArrowDown/>}</h1> 
                         {toggleServices && (
-                            <div className="absolute top-16 gap-3 flex flex-col items-center  bg-white right-64 py-7 px-8 shadow">
+                            <div className="absolute top-16 gap-3 flex flex-col items-center animate-fade-down  bg-white right-64 py-7 px-8 shadow">
                         
                                <Link href="/webdesign" className="text-black hover:text-[#E34234]">Website Design</Link> 
                                <Link href="webdev" className="text-black hover:text-[#E34234]">Website Development</Link>

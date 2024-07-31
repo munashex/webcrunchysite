@@ -10,16 +10,16 @@ import { FaPercent } from "react-icons/fa";
 function page() {
   return (
     <div>
-      <div className="bg-[#013220] space-y-7 lg:space-y-9 text-white px-2 md:px-7 lg:px-16 py-11">
-        <h1 className="font-thin text-xl">
+      <div className="bg-[#013220]  space-y-7 lg:space-y-9 text-white px-2 md:px-7 lg:px-16 py-11">
+        <h1 className="font-thin text-xl animate-fade-right">
           Website Design and Development Company
         </h1>
-        <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl md:max-w-2xl lg:max-w-2xl">
-          We design fantastic websites and powerful software systems
+        <h1 className="font-bold text-2xl  animate-fade-right animate-delay-700 md:text-3xl lg:text-5xl md:max-w-2xl lg:max-w-2xl">
+          We design fantastic websites  and powerful software systems
         </h1>
         <Link
           href="/portfolio"
-          className="border py-2 px-7 inline-flex items-center gap-3 border-white hover:bg-white hover:text-black font-bold"
+          className="border animate-fade-right animate-delay-1000 py-2 px-7 inline-flex items-center gap-3 border-white hover:bg-white hover:text-black font-bold"
         >
           View Portfolio <span><FaArrowRight size={20} /></span>
         </Link>
@@ -50,7 +50,7 @@ function page() {
         <div className="border border-slate-200 my-16 lg:my-24" />
 
         {/* Featured projects */}
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-2 lg:px-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 lg:mb-16">
             Featured Projects
           </h2>

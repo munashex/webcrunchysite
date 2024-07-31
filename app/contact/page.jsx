@@ -34,7 +34,7 @@ const Contact = () => {
               />
               <button 
                 type="submit" 
-                className="bg-black text-white py-3 px-8 rounded-lg font-bold text-lg inline-flex items-center gap-2 hover:bg-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+                className="bg-black text-white py-3 px-12 rounded-lg font-bold text-lg inline-flex items-center gap-2 hover:bg-blue-600 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
               >
                 Submit  
                 <IoMdArrowRoundForward size={24}/>
@@ -66,7 +66,7 @@ const Contact = () => {
 
           <div className="space-y-2">
             <h2 className="font-bold text-xl text-gray-800">Email Us</h2>
-            <a href="mailto:webcrunchy@gmail.com" className="text-lg text-blue-600 hover:text-blue-800 transition">webcrunchy@gmail.com</a>
+            <a href="mailto:webcrunchyofficial@gmail.com" className="text-lg text-blue-600 hover:text-blue-800 transition">webcrunchyofficial@gmail.com</a>
           </div> 
 
           
