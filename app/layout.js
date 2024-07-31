@@ -34,9 +34,11 @@ export default function RootLayout({ children }) {
       <link rel="manifest" href="/site.webmanifest"/>
       </head>
       <body className="font-sans w-full">
+        <div className="w-fit overflow-x-hidden">
         <Navbar/>
         {children}
         <Footer/>
+        </div>
         </body>
     </html>
   );

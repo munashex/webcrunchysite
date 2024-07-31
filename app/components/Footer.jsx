@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="bg-[#013220] w-full text-white">
+        <div className="bg-[#013220]  text-white w-[100%]">
             <div className="p-1 mx-2 md:mx-7 lg:mx-16 py-8 lg:py-16">
                 <div className="text-xl lg:text-3xl flex font-bold flex-col md:justify-center md:flex-row gap-5">
                     <h1>Do you have a project you'd like to talk about?</h1>
@@ -29,7 +29,7 @@ const Footer = () => {
                     <div className="space-y-2 md:mx-auto">
                         <h1 className="text-lg font-bold">Gauteng</h1>  
                         <h1>Crystal Park, Benoni, 1515</h1> 
-                        <a href="tel:+27635460625" className="underline underline-offset-2 text-lg">+27 6354 60625</a>
+                        <a href="tel:+27635460625" className="underline underline-offset-2">+27 6354 60625</a>
                     </div>
 
                     <div className="space-y-3 md:mx-auto">

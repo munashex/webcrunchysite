@@ -23,7 +23,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="bg-[#013220] w-full relative">
+        <div className="bg-[#013220] w-[100%] relative">
             {/* navbar on small screen */} 
             <div className="flex p-1 px-2 lg:hidden flex-row items-center justify-between">
                 <Link href="/">
@@ -49,7 +49,7 @@ const Navbar = () => {
                     </button>
                     {toggleServices ?  
                     ( 
-                    <div className="flex flex-col gap-y-3 text-lg font-thin"> 
+                    <div className="flex flex-col gap-y-3 text-lg"> 
                       <Link href="/webdesign" onClick={() => setOpenNav(!openNav)}>Website Design</Link> 
                       <Link href="/ecommerce" onClick={() => setOpenNav(!openNav)}>Ecommerce Website Design</Link> 
                       <Link href="/webdev" onClick={() => setOpenNav(!openNav)}>Website Development</Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
                     <Link href="/about" onClick={() => setOpenNav(!openNav)}>About Us</Link>
                 </div>
                 
-                <Link href="/contact" className="text-lg mx-5 inline-flex justify-center items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220]  p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
+                <Link onClick={() => setOpenNav(!openNav)} href="/contact" className="text-lg mx-5 inline-flex justify-center items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220]  p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
                     <span>Contact Us</span>
                     <span><FaArrowRight size="21"/></span>
                 </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
                     >
                         <h1 className="inline-flex items-center gap-2">Services {toggleServices ? <IoIosArrowUp/> : <IoIosArrowDown/>}</h1> 
                         {toggleServices && (
-                            <div className="absolute top-16 gap-3 flex flex-col items-center  bg-white right-64 py-7 px-8 rounded-t-md">
+                            <div className="absolute top-16 gap-3 flex flex-col items-center  bg-white right-64 py-7 px-8 shadow">
                         
                                <Link href="/webdesign" className="text-black hover:text-[#E34234]">Website Design</Link> 
                                <Link href="webdev" className="text-black hover:text-[#E34234]">Website Development</Link>

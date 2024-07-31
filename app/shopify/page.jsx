@@ -29,7 +29,7 @@ const Shopify = () => {
     return (
         <div>
           {/* only on small screens */}
-          <div className="py-16 bg-[#013220] mb-16  px-8 md:hidden">
+          <div className="py-9 bg-[#013220] mb-16  px-8 md:hidden">
                 <h1 className="text-white my-9 text-2xl font-semibold">
                 Shopify specialists for Ecommerce design and development
                 </h1>
@@ -40,7 +40,7 @@ const Shopify = () => {
             </div>  
 
             <div className="hidden md:flex w-full mb-24">
-                <div className="w-1/2 bg-[#013220] lg:relative">
+                <div className="w-1/2 bg-black lg:relative">
                     <div className="mx-6 lg:mx-16 lg:absolute bottom-32 right-0 left-0">
                         <h1 className="text-white my-9 text-2xl lg:text-4xl lg:-leading-7 font-semibold md:max-w-lg max-w-xl">
                         Shopify specialists for Ecommerce design and development
@@ -67,9 +67,9 @@ const Shopify = () => {
           <div className={`space-y-5 px-3 md:px-7 lg:px-24 md:w-1/2 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
             <h1 className="text-2xl lg:text-4xl font-bold">{service.name}</h1>
             <h1>{service.description}</h1>
-            <h1 className="hover:text-[#F47521] inline-flex gap-2 font-bold text-xl items-center">
+            <Link href="/contact" className="hover:text-[#F47521] inline-flex gap-2 font-bold text-xl items-center">
               Get A Quote <FaArrowRight color='#F47521' />
-            </h1>
+            </Link>
           </div>
           <div className={`md:w-1/2 ${index % 2 === 1 ? 'md:order-1' : ''}`}>
             <Image src={service.image} alt={`webcrunchy-${service.id}`} className="md:w-full" />
