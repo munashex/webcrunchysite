@@ -1,8 +1,32 @@
-"use client"
-
+"use client";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(process.env.NEXT_PUBLIC_SERVICE_ID, process.env.NEXT_PUBLIC_TEMPLATE_ID, form.current, {
+        publicKey: process.env.NEXT_PUBLIC_PUBLIC_ID,
+      })
+      .then(
+        () => {
+          toast.success('Sent successfully!');
+        },
+        (error) => {
+          console.log(error);
+          toast.error('Failed to send the message. Please try again later.');
+        },
+      );
+  };
+
   return (
     <div className="bg-gray-100 w-full py-12 md:py-20">
       <div className="container mx-auto px-4 md:px-8">
@@ -13,17 +37,19 @@ const Contact = () => {
               <h2 className="text-lg mt-3 text-gray-600">Fill out the form below and we'll be in touch soon.</h2>
             </div>
 
-            <form className="space-y-6">
+            <form className="space-y-6" ref={form} onSubmit={sendEmail}>
               <input 
                 type="text" 
                 className="w-full p-4 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition" 
                 placeholder="Name" 
+                name="user_name" 
                 required 
               /> 
               <input 
                 type="email" 
                 className="w-full p-4 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition" 
                 placeholder="Email" 
+                name="user_email"
                 required 
               /> 
               <textarea 
@@ -31,6 +57,7 @@ const Contact = () => {
                 placeholder="Message" 
                 rows="4" 
                 required 
+                name="message" 
               />
               <button 
                 type="submit" 
@@ -39,6 +66,7 @@ const Contact = () => {
                 Submit  
                 <IoMdArrowRoundForward size={24}/>
               </button>
+              <ToastContainer limit={1} />
             </form>
           </div>
 
@@ -69,11 +97,10 @@ const Contact = () => {
             <a href="mailto:webcrunchyofficial@gmail.com" className="text-lg text-blue-600 hover:text-blue-800 transition">webcrunchyofficial@gmail.com</a>
           </div> 
 
-          
         </div>
       </div>
     </div>
   )
 }
 
-export default Contact
+export default Contact;
