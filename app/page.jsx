@@ -35,7 +35,7 @@ function page() {
             <div key={service.name} className="flex flex-col items-center gap-y-4">
               <span>{service.icon}</span>
               <h1 className="text-2xl lg:text-3xl font-bold">{service.name}</h1>
-              <p className="text-center">{service.description}</p>
+              <p className="text-center md:text-lg">{service.description}</p>
               <Link
                 href={service.link}
                 className="font-semibold underline decoration-clone underline-offset-8 hover:text-[#E34234]"

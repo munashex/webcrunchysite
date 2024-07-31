@@ -60,7 +60,7 @@ const About = () => {
             <div className="md:w-1/2">
                 <div className="space-y-2">
                     <h1 className="text-xl lg:text-3xl font-bold">{info.name}</h1>
-                    <p>{info.description}</p>
+                    <p className="lg:text-lg">{info.description}</p>
                 </div>
             </div>
         </div>
@@ -71,7 +71,7 @@ const About = () => {
             <div className="md:w-1/2 order-1 md:order-none ">
                 <div className="space-y-2">
                     <h1 className="text-xl lg:text-3xl font-bold">{info.name}</h1>
-                    <p>{info.description}</p>
+                    <p className="lg:text-lg">{info.description}</p>
                 </div>
             </div>
             {/* Image section */}

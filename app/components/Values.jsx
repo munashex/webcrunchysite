@@ -16,7 +16,7 @@ const Values = () => {
             </div>
              <span>{value.icon}</span> 
              <h1 className="text-2xl font-bold">{value.name}</h1>
-             <h1 className="lg:max-w-sm">{value.description}</h1>
+             <h1 className="lg:max-w-sm lg:text-lg">{value.description}</h1>
             </div>
             ))}
            </div>

@@ -219,7 +219,7 @@ const Ecommerce = () => {
 
      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-9 gap-x-9 mt-16">
       {dataseven.map((service) => (
-        <div key={service.name} className="py-7 px-2 lg:px-9 space-y-9  odd:bg-[#1199C4] rounded-lg even:bg-[#95BF47]"> 
+        <div key={service.name} className="py-7 px-2 lg:px-9 space-y-9  odd:bg-[#1199C4] rounded-lg even:bg-black"> 
           <Image src={service.image} alt="webcrunchy"/>
           <div className="space-y-4 text-white"> 
             <h1 className="text-xl font-bold">{service.name}</h1> 
