@@ -198,7 +198,7 @@ const Ecommerce = () => {
       ))}
     </div>
 
-    <div className="mx-7 lg:mx-16 p-1  bg-[#FEEEE1] my-11  border border-[#F47521] rounded-xl">
+    <div className="mx-2 md:mx-7 lg:mx-16 p-1  bg-[#FEEEE1] my-11  border border-[#F47521] rounded-xl">
      <div className="flex flex-col py-11 md:py-20  items-center md:flex-row md:px-9  md:justify-between gap-y-11">
       <div className="space-y-3  md:max-w-xl lg:max-w-3xl">
         <h1 className="text-2xl lg:text-4xl font-extrabold text-center md:text-start">Considering an online business model?</h1>
@@ -309,7 +309,7 @@ const Ecommerce = () => {
   </div>
 
 
-     <div className="mx-7 lg:mx-16 p-1  bg-[#FEEEE1] my-24  border border-[#F47521] rounded-xl">
+     <div className="mx-2 md:mx-7 lg:mx-16 p-1  bg-[#FEEEE1] my-24  border border-[#F47521] rounded-xl">
      <div className="flex flex-col py-11 md:py-20  items-center md:flex-row md:px-9  md:justify-between gap-y-11">
       <div className="space-y-3  md:max-w-xl lg:max-w-3xl">
         <h1 className="text-2xl lg:text-4xl font-extrabold text-center md:text-start">Considering an online business model?</h1>
