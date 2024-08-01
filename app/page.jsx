@@ -11,7 +11,7 @@ function page() {
   return (
     <div>
       <div className="bg-[#013220]  space-y-7 lg:space-y-9 text-white px-2 md:px-7 lg:px-16 py-11">
-        <h1 className="font-thin text-xl animate-fade-right">
+        <h1 className="text-xl animate-fade-right">
           Website Design and Development Company
         </h1>
         <h1 className="font-bold text-2xl  animate-fade-right animate-delay-700 md:text-3xl lg:text-5xl md:max-w-2xl lg:max-w-2xl">

@@ -32,7 +32,7 @@ const Page = () => {
         <div>
          
          {/* only on small screens */}
-         <div className="py-9  bg-[#013220] mb-16  px-8 md:hidden">
+         <div className="py-9  bg-[#013220] mb-16  px-2 md:hidden">
            <h1 className="text-white my-9 text-2xl font-semibold">Create outstanding websites. Achieve business success.</h1>
            <Link href="/portfolio" className="text-white hover:bg-white items-center inline-flex gap-2 hover:text-black font-bold border p-2 px-8 text-lg">
             <span>View Portfolio</span>

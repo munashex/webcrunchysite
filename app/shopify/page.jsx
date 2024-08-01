@@ -29,7 +29,7 @@ const Shopify = () => {
     return (
         <div>
           {/* only on small screens */}
-          <div className="py-9 bg-[#013220] mb-16  px-8 md:hidden">
+          <div className="py-9 bg-[#013220] mb-16  px-2 md:hidden">
                 <h1 className="text-white my-9 text-2xl font-semibold">
                 Shopify specialists for Ecommerce design and development
                 </h1>

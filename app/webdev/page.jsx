@@ -28,7 +28,7 @@ const Webdev = () => {
     return (
         <div>
             {/* only on small screens */}
-            <div className="py-9 bg-[#013220] mb-16  px-8 md:hidden">
+            <div className="py-9 bg-[#013220] mb-16  px-2 md:hidden">
                 <h1 className="text-white my-9 text-2xl font-semibold">
                 Obtain top-tier web and mobile applications.
                 </h1>
