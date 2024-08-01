@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="border-t border-gray-300 my-10 lg:my-16" />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:justify-center">
-                <div className="md:mx-auto -mx-8">
+                <div className="md:mx-auto -mx-8 order-3 md:order-none">
                 <Image src={Logo} alt="Webcrunchy" className="w-72" />
                 <h1 className="mx-7">Copyright © 2024 Webcrunchy</h1>
                 </div> 
