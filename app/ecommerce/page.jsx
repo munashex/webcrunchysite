@@ -66,7 +66,7 @@ const Ecommerce = () => {
 
 
       {/* ecommerce service 2 */} 
-      <div className="mx-7 p-1 lg:mx-16">
+      <div className="mx-2 md:mx-7 p-1 lg:mx-16">
         <div className="space-y-6"> 
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-center">What makes Webcrunchy stand out from the competition?</h1>
         <h1 className="text-center md:max-w-2xl font-semibold md:mx-auto">Creating a website design that truly comes alive requires a diverse team of skilled professionals. You can rely on us. With 4 years of experience and a proven track record, we possess deep expertise in this field.</h1>
@@ -74,7 +74,7 @@ const Ecommerce = () => {
       </div>
 
 
-      <div className="p-1 mx-7 lg:mx-16 my-11 lg:my-16">
+      <div className="p-1 mx-2 md:mx-7 lg:mx-16 my-11 lg:my-16">
         {data2.map((service) => (
         <div key={service.name1} className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-11"> 
             
@@ -117,7 +117,7 @@ const Ecommerce = () => {
     {/* service 3 */} 
     <div className="bg-black text-white"> 
 
-     <div className="p-1 mx-7 lg:mx-16 my-16 lg:my-20">
+     <div className="p-1 mx-2 md:mx-7 lg:mx-16 my-16 lg:my-20">
       {data3.map((service) => (
         <div key={service.name} className="grid my-11 lg:my-20 grid-cols-1 gap-y-6  gap-x-24 lg:items-center lg:grid-cols-2"> 
           {/* grid item 1 === image  */}
@@ -142,7 +142,7 @@ const Ecommerce = () => {
       
 
       {/* service 4  */}
-      <div className="p-1 mx-7 lg:mx-16"> 
+      <div className="p-1 mx-2 md:mx-7 lg:mx-16"> 
         <h1 className="text-2xl lg:text-4xl font-bold md:max-w-4xl">Gain access to all the cutting-edge features that will propel your ecommerce store to unprecedented levels of success.</h1>
         
         <div className="my-16  grid grid-cols-1  md:grid-cols-2 gap-y-11 md:gap-y-16 md:gap-x-11">
@@ -162,7 +162,7 @@ const Ecommerce = () => {
 
      {/* service 5 */}
     <div className="bg-black py-11 md:py-16 lg:py-20 my-5 md:my-16">
-    <div className="p-1 mx-7 lg:mx-16">
+    <div className="p-1 mx-2 md:mx-7 lg:mx-16">
     <h1 className="text-white text-2xl lg:text-4xl font-bold text-center">Our approach to designing ecommerce websites</h1>
     
     {/* service 5 cards */}
@@ -210,7 +210,7 @@ const Ecommerce = () => {
 
 
     {/* service 7  */} 
-    <div className="p-1 mx-7 lg:mx-16 my-16 md:my-20 lg:my-28">
+    <div className="p-1 mx-2 md:mx-7 lg:mx-16 my-16 md:my-20 lg:my-28">
 
      <div className="space-y-3">
        <h1 className="text-2xl  lg:text-4xl font-bold text-center">Platforms we support</h1>
@@ -219,7 +219,7 @@ const Ecommerce = () => {
 
      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-9 gap-x-9 mt-16">
       {dataseven.map((service) => (
-        <div key={service.name} className="py-7 px-2 lg:px-9 space-y-9  odd:bg-[#1199C4] rounded-lg even:bg-black"> 
+        <div key={service.name} className="py-7 px-3 lg:px-9 space-y-9  odd:bg-[#1199C4] rounded-lg even:bg[#8B004B]"> 
           <Image src={service.image} alt="webcrunchy"/>
           <div className="space-y-4 text-white"> 
             <h1 className="text-xl font-bold">{service.name}</h1> 
@@ -233,7 +233,7 @@ const Ecommerce = () => {
 
     {/* service 8 */} 
     <div className="bg-black py-11 md:py-16"> 
-    <div className="p-1 mx-7 lg:mx-16 text-white"> 
+    <div className="p-1 mx-2 md:mx-7 lg:mx-16 text-white"> 
         <h1 className="text-2xl lg:text-4xl font-bold text-center">A comprehensive ecommerce agency</h1>
         
         <div className="my-16  grid grid-cols-1  md:grid-cols-2 gap-y-11 md:gap-y-16 md:gap-x-11">
@@ -253,7 +253,7 @@ const Ecommerce = () => {
 
 
     {/* service 9 */} 
-    <div className="mx-7 p-1 lg:mx-16 my-11 lg:my-20"> 
+    <div className="mx-2 md:mx-7 p-1 lg:mx-16 my-11 lg:my-20"> 
       <div className="space-y-4"> 
        <h1 className="text-center font-bold text-2xl lg:text-4xl">Seamless integration with your preferred tools</h1>
         <h1 className="text-center md:max-w-4xl md:text-lg md:mx-auto">Don't give up your favorite tools for a new ecommerce site. Whether it’s accounting software, a CRM, inventory management, or a POS, we can integrate it seamlessly. We specialize in complex software and API integrations to save you time and streamline your workflow.</h1>
