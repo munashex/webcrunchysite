@@ -6,13 +6,13 @@ import { FaArrowRight } from 'react-icons/fa'
 const AboutOverview = () => {
     return (
         <div className="my-24 lg:my-32">
-            <div className="container mx-auto px-4 md:px-7 lg:px-16">
+            <div className="container mx-auto px-2 md:px-7 lg:px-16">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div className="space-y-6">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-black leading-tight">
+                        <h2 className="text-2xl lg:text-4xl font-bold text-black leading-tight">
                             A top-tier company in South Africa specializing in website design and development.
                         </h2>
-                        <div className="relative rounded-lg overflow-hidden shadow-xl">
+                        <div className="relative  overflow-hidden shadow-xl">
                             <Image 
                                 src={overview} 
                                 alt="Webcrunchy overview" 
