@@ -52,7 +52,7 @@ const Ecommerce = () => {
           <div className='lg:w-1/2'>
         <Image src={service.image} alt={`webcrunchy-${service.id}`} className="md:w-full" />
           </div>
-          <div className="space-y-5 px-7 lg:px-24 lg:w-1/2">
+          <div className="space-y-5 px-3 md:px-7 lg:px-24 lg:w-1/2">
             <h1 className="text-2xl lg:text-4xl font-extrabold">{service.name}</h1>
             <h1>{service.description}</h1>
             <h1>{service.description1}</h1>
@@ -117,7 +117,7 @@ const Ecommerce = () => {
     {/* service 3 */} 
     <div className="bg-black text-white"> 
 
-     <div className="p-1 mx-2 md:mx-7 lg:mx-16 my-16 lg:my-20">
+     <div className="p-1 mx-4 md:mx-7 lg:mx-16 my-16 lg:my-20">
       {data3.map((service) => (
         <div key={service.name} className="grid my-11 lg:my-20 grid-cols-1 gap-y-6  gap-x-24 lg:items-center lg:grid-cols-2"> 
           {/* grid item 1 === image  */}
@@ -186,7 +186,7 @@ const Ecommerce = () => {
           <div className='lg:w-1/2 order-2'>
         <Image src={service.image} alt={`webcrunchy-${service.id}`} className="md:w-full" />
           </div>
-          <div className="space-y-5 px-7 lg:px-24 lg:w-1/2">
+          <div className="space-y-5 px-3 md:px-7 lg:px-24 lg:w-1/2">
             <h1 className="text-2xl lg:text-4xl font-extrabold">{service.name}</h1>
             <h1>{service.description}</h1>
             <h1>{service.description1}</h1>
@@ -219,7 +219,7 @@ const Ecommerce = () => {
 
      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-9 gap-x-9 mt-16">
       {dataseven.map((service) => (
-        <div key={service.name} className="py-7 px-3 lg:px-9 space-y-9  odd:bg-[#1199C4] rounded-lg even:bg[#8B004B]"> 
+        <div key={service.name} className="py-7 px-3 lg:px-9 space-y-9  odd:bg-[#1199C4] rounded-lg even:bg-[#8B004B]"> 
           <Image src={service.image} alt="webcrunchy"/>
           <div className="space-y-4 text-white"> 
             <h1 className="text-xl font-bold">{service.name}</h1> 
