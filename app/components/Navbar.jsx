@@ -77,35 +77,37 @@ const Navbar = () => {
         
             {/* navbar on lg screens  */} 
             <div className="hidden lg:flex text-[#F5FFFA] p-1 items-center justify-between mx-12 relative">
-               <Link href="/">
-               <Image src={Logo} alt="webcrunchy" className="w-72" />
-               </Link>
+  <Link href="/">
+    <Image src={Logo} alt="webcrunchy" className="w-72" />
+  </Link>
 
-                <div className="text-xl font-bold flex flex-row gap-x-16 items-center">
-                    <Link href="/portfolio">Portfolio</Link> 
-                    <div 
-                    onMouseEnter={handleOpenServices} 
-                    onMouseLeave={handleCloseServices}
-                    >
-                        <h1 className="inline-flex items-center gap-2">Services {toggleServices ? <IoIosArrowUp/> : <IoIosArrowDown/>}</h1> 
-                        {toggleServices && (
-                            <div className="absolute top-16 gap-3 flex flex-col items-center animate-fade-down  bg-white right-64 py-7 px-8 shadow">
-                        
-                               <Link href="/webdesign" className="text-black hover:text-[#E34234]">Website Design</Link> 
-                               <Link href="webdev" className="text-black hover:text-[#E34234]">Website Development</Link>
-                               <Link href="/mobileapp" className="text-black hover:text-[#E34234]">Mobile App Development</Link>
-                               <Link href="shopify" className="text-black hover:text-[#E34234]">Shopify Web Development</Link>
-                               <Link href="/ecommerce" className="text-black hover:text-[#E34234]">Ecommerce Website Design</Link> 
-                            </div>
-                        )}
-                    </div>
-                    <Link href="/about">About Us</Link>  
-                    <Link href="/contact" className="text-lg inline-flex items-center gap-x-3  font-bold border-2 bg-[#F5FFFA] text-[#013220] p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
-                        <span>Contact Us</span>
-                        <span><FaArrowRight size="21"/></span>
-                    </Link>
-                </div>
-            </div>
+  <div className="text-xl font-bold flex flex-row gap-x-16 items-center">
+    <Link href="/portfolio">Portfolio</Link>
+    <div 
+      onMouseEnter={handleOpenServices} 
+      onMouseLeave={handleCloseServices}
+    >
+      <h1 className="inline-flex items-center gap-2">
+        Services {toggleServices ? <IoIosArrowUp /> : <IoIosArrowDown />}
+      </h1>
+      {toggleServices && (
+        <div className="absolute top-16 right-64 bg-white py-7 px-8 shadow z-50">
+          <Link href="/webdesign" className="text-black hover:text-[#E34234]">Website Design</Link>
+          <Link href="webdev" className="text-black hover:text-[#E34234]">Website Development</Link>
+          <Link href="/mobileapp" className="text-black hover:text-[#E34234]">Mobile App Development</Link>
+          <Link href="shopify" className="text-black hover:text-[#E34234]">Shopify Web Development</Link>
+          <Link href="/ecommerce" className="text-black hover:text-[#E34234]">Ecommerce Website Design</Link>
+        </div>
+      )}
+    </div>
+    <Link href="/about">About Us</Link>
+    <Link href="/contact" className="text-lg inline-flex items-center gap-x-3 font-bold border-2 bg-[#F5FFFA] text-[#013220] p-1 px-6 hover:bg-[#E34234] hover:border-[#E34234] hover:text-[#F5FFFA]">
+      <span>Contact Us</span>
+      <span><FaArrowRight size="21" /></span>
+    </Link>
+  </div>
+</div>
+
         </div>
     )
 }

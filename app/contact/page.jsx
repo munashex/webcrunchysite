@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-100 w-full py-12 md:py-20">
+    <div className="bg-gray-100 w-screen py-12 md:py-20">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="space-y-10">
