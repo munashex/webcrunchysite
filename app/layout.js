@@ -1,7 +1,7 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer'
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -37,6 +37,7 @@ export default function RootLayout({ children }) {
         <div className="w-fit overflow-x-hidden">
         <Navbar/>
         {children}
+        <Analytics/>
         <Footer/>
         </div>
         </body>
