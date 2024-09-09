@@ -84,17 +84,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="space-y-2">
-            <h2 className="font-bold text-xl text-gray-900">Call Us</h2>
-            <a href="tel:+27635460625" className="text-lg text-blue-600 hover:text-blue-800 transition">+27 6354 60625</a>
-          </div>  
-
-          <div className="space-y-2">
-            <h2 className="font-bold text-xl text-gray-900">Email Us</h2>
-            <a href="mailto:webcrunchyofficial@gmail.com" className="text-lg text-blue-600 hover:text-blue-800 transition">webcrunchyofficial@gmail.com</a>
-          </div> 
-        </div>
+       
       </div>
     </div>
   )
